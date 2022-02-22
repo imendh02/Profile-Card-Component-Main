@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+:root {
+    --background: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --white:hsl(0, 100%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: var(--background);
+    background-image: url("./images/bg-pattern-top.svg"),url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat,no-repeat;
+    background-position:bottom 35vh right 50vw, top 50vh left 50vw;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.card {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--white);
+    text-align: center;
+    width: 348px;
+    border-radius: 15px;
+}
+.card-image {
+    background-image: url("./images/bg-pattern-card.svg");
+    height: 140px;
+    border-radius: 15px 15px 0 0;
+}
+.card-image .avatar {
+    background-color: var(--white);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding:5px;
+    overflow: hidden;
+    transform: translate(125px,90px);
+}
+.card-image .avatar img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;    
+}
+section h1{
+    Font-size:18px;
+    color:var(--Very-dark-desaturated-blue);
+}
+section h1 span {
+    color:var(--Dark-grayish-blue);
+}
+section small {
+    color:var(--Dark-grayish-blue);
+}
+section:nth-child(1) {
+    margin-top: 70px ;
+    padding-bottom: 25px;
+    border-bottom: 0.1px solid var(--Dark-gray);
+    filter: brightness(140%);
+    line-height: 1.5;
+}
+section:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin:25px 45px 25px 45px;
+}
+section ul {
+    list-style-type: none;
+}
+section ul li:nth-child(1) {
+    color:var(--Very-dark-desaturated-blue);
+    Font-size:18px;
+    font-weight: bold;
+}
+section ul li:nth-child(2) {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.attribution { 
+    font-size: 13px; 
+    text-align: center;
+    position: absolute;
+    bottom:20px;
+    width: 100%;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
